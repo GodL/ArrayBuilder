@@ -5,7 +5,6 @@
 //  Created by L God on 2024/1/3.
 //
 
-#if os(iOS) || os(tvOS)
 import UIKit
 import ArrayBuilder
 
@@ -18,5 +17,3 @@ extension UIAlertController {
         }
     }
 }
-
-#endif

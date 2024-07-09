@@ -5,12 +5,9 @@
 //  Created by L God on 2024/1/3.
 //
 
-#if os(iOS) || os(tvOS)
-
 import UIKit
 import ArrayBuilder
 
-@available(iOS 13.0, tvOS 14.0, *)
 extension UIMenu {
     
     @inlinable
@@ -26,7 +23,7 @@ extension UIMenu {
         UIMenu(title: title, image: image, identifier: identifier, options: options, children: children())
     }
     
-    @available(iOS 15.0, tvOS 15.0, *)
+    @available(iOS 15.0, visionOS 1.0, tvOS 15.0, *)
     @inlinable
     @inline(__always)
     @MainActor
@@ -41,7 +38,7 @@ extension UIMenu {
         UIMenu(title: title, subtitle: subtitle, image: image, identifier: identifier, options: options, children: children())
     }
     
-    @available(iOS 16.0, tvOS 16.0, *)
+    @available(iOS 16.0, visionOS 1.0, tvOS 16.0, *)
     @inlinable
     @inline(__always)
     @MainActor
@@ -58,7 +55,6 @@ extension UIMenu {
     }
 }
 
-@available(iOS 13.0, tvOS 14.0, *)
 extension UIMenu {
     @inlinable
     @inline(__always)
@@ -67,5 +63,3 @@ extension UIMenu {
         self.replacingChildren(newChildren())
     }
 }
-
-#endif

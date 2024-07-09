@@ -5,11 +5,9 @@
 //  Created by L God on 2024/1/3.
 //
 
-#if os(iOS) || os(tvOS)
 import UIKit
 import ArrayBuilder
 
-@available(iOS 13.0, tvOS 13.0, *)
 extension NSDiffableDataSourceSnapshot {
     @inlinable
     @inline(__always)
@@ -58,5 +56,3 @@ extension NSDiffableDataSourceSnapshot {
         self.insertItems(identifiers(), afterItem: identifier)
     }
 }
-
-#endif
